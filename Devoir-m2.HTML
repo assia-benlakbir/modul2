@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>devoir 1</title>
+</head>
+<body>
+<style>
+body {
+    margin: 0;
+    font-family: 'Your Chosen Font', sans-serif; /* Optional: Set a custom font */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 150%; /* 75% larger than the dummy text */
+    margin: 20px;
+	text-align:center;
+}
+
+.section {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    margin: 10px;
+    overflow: hidden; /* Clear float */
+    background-color: #e0e0e0; /* Set your chosen background color */
+    position: relative; /* Enable absolute positioning for child elements */
+	
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: PINK; /* Unique color for section title region */
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    color: black; /* Adjust text color for visibility */
+    font-size: 95%; /* 25% larger than the dummy text */
+}
+
+@media (min-width: 768px) {
+    .section {
+        width: 48%; /* 2 sections side by side */
+    }
+
+    .section:nth-child(3) {
+        clear: both; /* Move the third section below the first two */
+		
+    }
+}
+
+@media (min-width: 992px) {
+    .section {
+        width: 30%; /* 3 sections side by side */
+		
+    }
+}
+</style>
+    <h1>Our Menu</h1>
+
+    <section class="section">
+        <div class="section-title">Chicken</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Beef</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Sushi</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labor et dolor manga aliqua. ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </section>
+</body>
+</html>
